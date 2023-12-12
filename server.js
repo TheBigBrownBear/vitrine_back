@@ -39,6 +39,10 @@ app.post("/mail", (req, res) => {
 
 })
 
+app.get("/", (req, res) => {
+    res.json({ message: "Welcome to my server." });
+});
+
 
 app.listen(3200)
 
